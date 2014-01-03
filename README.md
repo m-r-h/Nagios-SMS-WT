@@ -10,7 +10,7 @@ Define two commands notify-by-sms and host-notify-by-sms as follows
 
 	define command { 
 	        command_name notify-by-sms 
-	        command_line $USER1$/notify_worldtext_sms.pl -i ACCOUNTID -k APIKEY -d $CONTACTPAGER$ -t "NOTIFICATIONTYPE$ $SERVICESTATE$ $SERVICEDESC$ Host($HOSTNAME$) Info($SERVICEOUTPUT$) Date($SHORTDATETIME$)" 
+	        command_line $USER1$/notify_worldtext_sms.pl -i ACCOUNTID -k APIKEY -d $CONTACTPAGER$ -t "$NOTIFICATIONTYPE$ $SERVICESTATE$ $SERVICEDESC$ Host($HOSTNAME$) Info($SERVICEOUTPUT$) Date($SHORTDATETIME$)" 
 	} 
 	
 	define command { 
